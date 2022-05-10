@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Section, Title } from "./App.style";
+import { Section, TasksList, Title } from "./App.style";
 import Form from "./components/Form/Form";
 import Task from "./components/Task/Task";
 import toDosData from "./data/toDosData";
@@ -23,13 +23,13 @@ const App = () => {
       </Section>
 
       <Section>
-        <ul>
+        <TasksList>
           {toDos.map(({ id, name, done }) => (
             <li key={id}>
               <Task id={id} name={name} done={done}></Task>
             </li>
           ))}
-        </ul>
+        </TasksList>
       </Section>
     </>
   );

@@ -1,16 +1,12 @@
 import styled from "styled-components";
 
 const StyledTask = styled.a`
-  list-style: none;
   font-size: 25px;
-
+  text-decoration: none;
+  color: white;
   margin: 15px;
 
   cursor: pointer;
-
-  text-decoration: none;
-  color: white;
-
   user-select: none;
 
   &.done {

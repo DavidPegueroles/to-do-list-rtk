@@ -3,11 +3,10 @@ import styled from "styled-components";
 export const TasksList = styled.ul`
   display: flex;
   flex-direction: column;
-
+  list-style: none;
   padding: 0;
 
   .task {
-    list-style: none;
     display: flex;
 
     padding: 0;
